@@ -9,8 +9,8 @@ import 'package:time_tracker_flutter_course/services/firestore_service.dart';
 abstract class Database {
   Future<void> setEvent(Event event);
   Future<void> deleteEvent(Event event);
-  Stream<List<Job>> eventsStream();
-  Stream<Job> eventStream({@required String eventId});
+  Stream<List<Event>> eventsStream();
+  Stream<Event> eventStream({@required String eventId});
 
   Future<void> setEntry(Entry entry);
   Future<void> deleteEntry(Entry entry);
